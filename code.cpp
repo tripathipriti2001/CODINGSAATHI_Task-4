@@ -80,7 +80,7 @@ int main() {
     questions.push_back(Question("Who invented Computer?", question2Options, 2));
 
 
-    Exam exam(questions, 300); // 5 minutes exam duration
+    Exam exam(questions, 300); 
 
     string inputUsername, inputPassword;
     cout << "Login\n";
@@ -107,7 +107,7 @@ int main() {
             // Clear the input buffer
             cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
-            if (selectedOption - 1 == currentQuestion.correctOption) {
+            if (selectedOption == currentQuestion.correctOption) {
                 cout << "CORRECT ANSWER!\n";
             } else {
                 cout << "INCORRECT ANSWER!\n";
